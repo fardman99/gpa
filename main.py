@@ -2,7 +2,7 @@ marks = ["A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "F"]
 gpas = [4.0, 3.7, 3.33, 3.0, 2.7, 2.33, 2.0, 1.7, 1.33, 1, 0.67, 0]
 grades = []
 
-def total():
+def avg():
     x = 0
     for i in grades:
         x = x + i
@@ -19,7 +19,7 @@ def main():
                     if marks[i] == x:
                         grades.append(gpas[i])
             elif x.lower() in ["q", "quit"]:
-                total()
+                avg()
             else:
                 print("Invalid input")
                 break
